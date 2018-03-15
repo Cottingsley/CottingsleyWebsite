@@ -100,12 +100,16 @@ div.form-input-wide {
     top: 207px;}
 
 .product #product-screen .item .image .point.pointnew1 {
-    left: 261px !important;
-    top: 60px !important;
+    left: 146px !important;
+    top: 65px !important;
 }
 .product #product-screen .item .image .point.pointnew2 {
-    left: 40px !important;
-    top: 155px !important;
+    left: 41px !important;
+    top: 181px !important;
+}
+.product #product-screen .item .image .point.point7 {
+   left: 366px !important;
+    top: 92px !important;
 }
 .btnwhite {
     background-color: #fff !important;
