@@ -1,0 +1,141 @@
+﻿#btnContactUsmodal:hover #registerIco g{
+    fill:#2196f3;
+}
+
+#contact-us-modal .modal-dialog .modal-content form .modal-body .form-group input,
+ #subscribe-modal .modal-dialog .modal-content form .modal-body .form-group input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2e2e2e;
+    border-radius: 4px;
+    background-color: #404040;
+    height: 44px;
+    font-family: roboto,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    box-shadow: none;
+    color: #fff;
+}
+
+#contact-us-modal .modal-dialog .modal-content {
+    height: 674px;
+}
+
+.modal {
+    top:-10%;
+    overflow-y:hidden;
+}
+
+.pageHeading .text h2 {
+        font-size: 74px;
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    line-height: 74px;
+    margin-top: 17px;
+}
+
+.pageHeading .text h3 {
+    font-size: 38px;
+    font-weight: 400;
+    font-family: montserrat,sans-serif;
+    text-transform: initial;
+    line-height: 48px;
+}
+ul.form-section {
+    list-style:none;
+}
+
+ul.form-section li.form-line{
+    padding: 2% 0% 0% 9%;
+    max-width: 72%;
+}
+
+.form-all {
+    padding-top: 80px;
+}
+.form-label{
+    float:left;
+}
+div.form-input-wide {
+    float:right;
+}
+
+.colorblue {
+    color:#2196f3;
+}
+
+.btnmiddle{
+    width:fit-content !important;
+    left:41% !important;
+}
+
+#contact-us-modal .modal-dialog, #subscribe-modal .modal-dialog{
+    box-shadow:none !important;
+}
+
+#contact-us-modal .modal-dialog .modal-content, #subscribe-modal .modal-dialog .modal-content {
+    box-shadow: 0px 1px 3px 11px rgba(35, 113, 210, 0.33) !important;
+}
+
+#desktopIcons{
+    display:block;
+}
+#mobileIcons{
+    display:none;
+}
+
+/*Harsh*/
+
+.imgsmall {
+    width: 540px !important;
+    height: 351px !important;
+}
+#product-screen .item .image .point.point4{left: 406px;
+    top: 323px;}
+.product #product-screen .item .image .point.point5{left: 134px;
+    top: 335px;
+}
+.product #product-screen .item .image .point.point6{left: 446px;
+    top: 207px;}
+
+.product #product-screen .item .image .point.pointnew1 {
+    left: 261px !important;
+    top: 60px !important;
+}
+.product #product-screen .item .image .point.pointnew2 {
+    left: 40px !important;
+    top: 155px !important;
+}
+.btnwhite {
+    background-color: #fff !important;
+    color: #2196f3;
+    margin-left: 41%;
+}
+/*Harsh*/
+
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+
+
+/* Portrait */
+@media  (max-width: 767px) {
+    #mobileIcons{
+    display:block;
+    }
+    #desktopIcons {
+        display:none;
+    }
+}
+
+/* Landscape */
+@media  (max-width: 300px) {
+    #mobileIcons{
+    display:block;
+    }
+    #desktopIcons{
+        display:none;
+    }
+}

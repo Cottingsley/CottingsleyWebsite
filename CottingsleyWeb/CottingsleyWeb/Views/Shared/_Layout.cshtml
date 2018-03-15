@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/cottingsleymain.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/pushy.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/base-sizing.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/template.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/color-change.css">
+    <meta charset="UTF-8">
+    <meta name="title" content="">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+    <meta name="keywords" content="Cottingsley.tech Cloud based ERP business solutions">
+    <meta name="description" content="Cottingsley.tech Cloud based ERP business solutions">
+
+    <meta name="robots" content="noodp,noydir">
+
+    <meta name="author" content="Cottingsley.tech Cloud based ERP business solutions">
+    <meta name="copyright" content="Cottingsley.tech">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    
+    <title>@ViewBag.Title - Cottingsley.tech</title>
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @*@@Scripts.Render("~/Content/cottingsleystyle")*@
+
+</head>
+<body class="theme-light-blue" style="">
+    <div class="main-container-wrapper ">
+        <nav class="pushy pushy-left" style="visibility: visible;">
+
+            <div class="nav-toggle menu-btn">
+                <a class="nav-close" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    <div class="line"></div>
+
+
+                    <div class="line"></div>
+
+
+                    <div class="line"></div>
+                </a>
+            </div>
+
+            <ul>
+                <li class="open-menu-wrapper">
+                    <a class="pushy-link menu-logo nav-close hamburger-transition" href="#">MENU</a>
+                    <div>
+                        <ul class="page-menu">
+                            <li class="pushy-link scroll">
+                            @*@Html.ActionLink("Home", "Index", "Home", null, null)*@
+                                <a href="./index">Home</a>
+                            </li>
+                            <li class="pushy-link scroll link-product"><a href="./index#product">Product</a></li>
+                            <li class="pushy-link scroll link-how-it-works"><a href="/index#how-it-works">How It Works</a></li>
+                            <li class="pushy-link scroll link-benefits"><a href="#benefits">The Benefits</a></li>
+                            <li class="pushy-link scroll link-collection"><a href="#collection">Collection</a></li>
+                            <li class="pushy-link scroll link-more-product"><a href="#more-product">More</a></li>
+                            <li class="pushy-link scroll link-reviews"><a href="#reviews">Reviews</a></li>
+                            <li class="pushy-link scroll link-team"><a href="#team">Team</a></li>
+                            <li class="pushy-link scroll link-timeline"><a href="#timeline">Timeline</a></li>
+                            <li class="pushy-link scroll link-contact-us-map"><a href="#contact-us-map">Contact us</a></li>
+                        </ul>
+
+                        <ul class="more-pages">
+                            <li class="pushy-link">
+                            @Html.ActionLink("Product research", "Index", "ProductResearch", null, null)
+                            </li>
+                            <li class="pushy-link"><a href="blog.html">Blog</a></li>
+                            <li class="pushy-link"><a href="blog-single.html">Blog Single</a></li>
+                            <li class="pushy-link"><a href="about-us.html">About Us</a></li>
+                            <li class="pushy-link"><a href="faq.html">FAQ</a></li>
+                            <li class="pushy-link"><a href="checkout.html">Checkout</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="pushy-link social"><a class="twitter" href="#"></a><a class="facebook" href="#"></a><a class="instagram" href="#"></a></li>
+            </ul>
+        </nav>
+        <div class="site-overlay"></div>
+        <div id="container">
+            <nav class="navbar navbar-fixed-top" hidden="" style="display: block;">
+
+                <div class="nav-toggle menu-btn">
+                    <a class="nav-open hamburger-transition bg-color">
+
+                        <div class="line"></div>
+
+
+                        <div class="line"></div>
+
+
+                        <div class="line"></div>
+                    </a>
+                </div>
+
+
+                <div class="brand-and-crumbs">
+                    <a class="branding-logo" href="./index.html">
+
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.79 17.08" class=" drawsvg-initialized"><title>logo-white</title><path d="M172.37,0a1.42,1.42,0,0,0-1.42,1.42v6H162.4v-6a1.42,1.42,0,1,0-2.85,0V15.65a1.42,1.42,0,1,0,2.85,0V10.23h8.54v5.42a1.42,1.42,0,0,0,2.85,0V1.42A1.42,1.42,0,0,0,172.37,0Z" transform="translate(0 0.01)" style="fill: rgb(51, 51, 51); stroke-dasharray: 86.284, 86.284; stroke-dashoffset: 86.284;"></path><path d="M126.76,0a1.42,1.42,0,0,0-1.42,1.42V11.8l-6.49-8.23h0l-2.38-3L116.4.49l-.1-.11-.1-.09-.12-.08L116,.15l-.13-.05-.13,0-.13,0h-.28l-.15,0L115,0l-.13,0-.13.05-.11.06-.13.08,0,0-.06.05-.11.11-.08.1-.08.12-.06.12L114,.93l0,.13s0,.09,0,.13a1.41,1.41,0,0,0,0,.15s0,.05,0,.08V15.65a1.42,1.42,0,0,0,2.85,0V5.52L122,12.1,123,13.47h0l2.38,3a1.59,1.59,0,0,0,1.34.58,1.42,1.42,0,0,0,1.42-1.42V1.42A1.42,1.42,0,0,0,126.76,0Z" transform="translate(0 0.01)" style="fill: rgb(51, 51, 51); stroke-dasharray: 93.3997, 93.3997; stroke-dashoffset: 93.3997;"></path><path d="M58.33,14.23h-10V1.42a1.42,1.42,0,1,0-2.85,0V15.65h0a1.42,1.42,0,0,0,1.42,1.42H58.33a1.42,1.42,0,1,0,0-2.85Z" transform="translate(0 0.01)" style="fill: rgb(51, 51, 51); stroke-dasharray: 59.6685, 59.6685; stroke-dashoffset: 59.6685;"></path><path id="logo-color" d="M81.71,17A1.47,1.47,0,0,0,82.47,15L76.79,1a1.6,1.6,0,0,0-.17-.31A1.35,1.35,0,0,0,76,.12,1.33,1.33,0,0,0,75.51,0h-.14a1.33,1.33,0,0,0-.46.09,1.35,1.35,0,0,0-.65.56,1.6,1.6,0,0,0-.17.31L68.4,15A1.47,1.47,0,0,0,69.15,17" transform="translate(0 0.01)" style="fill: rgb(33, 150, 243); stroke-dasharray: 38.6016, 38.6016; stroke-dashoffset: 38.6016;"></path><path d="M12.8,0a1.42,1.42,0,0,0-1.42,1.42V10a4.27,4.27,0,0,1-8.54,0V1.42A1.42,1.42,0,1,0,0,1.42V10a7.11,7.11,0,0,0,14.23,0V1.42A1.42,1.42,0,0,0,12.8,0Z" transform="translate(0 0.01)" style="fill: rgb(102, 102, 102); stroke-dasharray: 79.0252, 79.0252; stroke-dashoffset: 79.0252;"></path><path d="M29.88,11.38a4.27,4.27,0,0,0,0-8.54H25.61v8.54Z" transform="translate(0 0.01)" style="fill: none; stroke-dasharray: 30.4965, 30.4965; stroke-dashoffset: 30.4965;"></path><path d="M35.56,2.85A7.09,7.09,0,0,0,29.88,0H24.18a1.42,1.42,0,0,0-1.42,1.42V15.65a1.42,1.42,0,0,0,2.85,0V14.23h4.27A7.1,7.1,0,0,0,35.56,2.85Zm-5.68,8.54H25.61V2.85h4.27a4.27,4.27,0,0,1,0,8.54Z" transform="translate(0 0.01)" style="fill: rgb(102, 102, 102); stroke-dasharray: 85.1763, 85.1763; stroke-dashoffset: 85.1763;"></path><path d="M103.92,0a1.42,1.42,0,0,0-1.42,1.42V10A4.27,4.27,0,0,1,94,10V1.42a1.42,1.42,0,1,0-2.85,0V10a7.11,7.11,0,0,0,14.23,0V1.42A1.42,1.42,0,0,0,103.92,0Z" transform="translate(0 0.01)" style="fill: rgb(51, 51, 51); stroke-dasharray: 78.244, 78.244; stroke-dashoffset: 78.244;"></path><path d="M149.59,14.22h-5.76l-.48,0a4.26,4.26,0,0,1-3.78-4.05V6.92a4.26,4.26,0,0,1,3.78-4.05l.48,0h5.76a1.42,1.42,0,1,0,0-2.85h-5.76a7,7,0,0,0-4.26,1.44,7.18,7.18,0,0,0-1.42,1.41,7.07,7.07,0,0,0-1.42,4.05c0,.07,0,.32,0,.38V9.79c0,.05,0,.31,0,.38a7.07,7.07,0,0,0,1.42,4.05,7.18,7.18,0,0,0,1.42,1.41,7,7,0,0,0,4.26,1.44h5.76a1.42,1.42,0,1,0,0-2.85Z" transform="translate(0 0.01)" style="fill: rgb(51, 51, 51); stroke-dasharray: 73.4149, 73.4149; stroke-dashoffset: 73.4149;"></path></svg>
+                            @*<svg viewBox="0 0 312 214" style="height: 93px;width: 367px;top:-25px;" class=" drawsvg-initialized">
+                                <defs id="SvgjsDefs1143"></defs>
+                                <g id="SvgjsG1147" rel="mainfill" name="symbol" feature="symbol" xmlns:name="symbol_mainfill" fill="#073531" transform="translate(-204, 13.01227159430481) scale(1.9877284056951892)" style="color: #073531;"><g><g><path class="st0" d="M24.6,46.6c-0.6,0-1,0.4-1,1V62c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V47.6c0-0.6-0.4-1-1-1H24.6z M28.6,61h-3    V48.6h3V61z" style="fill: rgb(3, 169, 244); stroke-dasharray: 75.9688, 75.9688; stroke-dashoffset: 75.9688;"></path></g><g><path class="st0" d="M14.1,51.6c-0.6,0-1,0.4-1,1V62c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1v-9.5c0-0.6-0.4-1-1-1H14.1z M18.1,61h-3    v-7.5h3V61z" style="fill: rgb(3, 169, 244); stroke-dasharray: 56.3688, 56.3688; stroke-dashoffset: 56.3688;"></path></g><g><path class="st0" d="M34.9,42.2c-0.6,0-1,0.4-1,1V62c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V43.2c0-0.6-0.4-1-1-1H34.9z M38.9,61h-3    V44.2h3V61z" style="fill: rgb(3, 169, 244); stroke-dasharray: 93.5688, 93.5688; stroke-dashoffset: 93.5688;"></path></g><g><path class="st0" d="M45.2,33.6c-0.6,0-1,0.4-1,1V62c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V34.6c0-0.6-0.4-1-1-1H45.2z M49.2,61h-3    V35.6h3V61z" style="fill: rgb(3, 169, 244); stroke-dasharray: 127.969, 127.969; stroke-dashoffset: 127.969;"></path></g><g><path class="st0" d="M66,65H3V2c0-0.6-0.4-1-1-1S1,1.4,1,2v64c0,0.6,0.4,1,1,1h64c0.6,0,1-0.4,1-1C67,65.4,66.6,65,66,65z" style="fill: rgb(3, 169, 244); stroke-dasharray: 261.961, 261.961; stroke-dashoffset: 261.961;"></path></g><g><path class="st0" d="M50,25.9h4.5V62c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V25.9H66c0.4,0,0.7-0.2,0.9-0.6c0.2-0.3,0.1-0.8-0.1-1.1    l-8-10c-0.4-0.5-1.2-0.5-1.6,0l-8,10C49,24.6,49,25,49.1,25.4C49.3,25.7,49.6,25.9,50,25.9z M58,16.6l5.9,7.4h-3.4    c-0.6,0-1,0.4-1,1V61h-3V24.9c0-0.6-0.4-1-1-1h-3.4L58,16.6z" style="fill: rgb(3, 169, 244); stroke-dasharray: 225.374, 225.374; stroke-dashoffset: 225.374;"></path></g><g><path class="st0" d="M7.4,24l3.5,0.5c0.4,1.6,1,3.1,1.9,4.5l-2.1,2.7c-0.4,0.6-0.4,1.4,0.1,1.9l2.5,2.4c0.5,0.5,1.4,0.6,1.9,0.1    l2.8-2.1c1.4,0.9,3,1.5,4.6,1.9l0.5,3.4c0.1,0.7,0.7,1.3,1.4,1.3h3.5c0.7,0,1.3-0.5,1.4-1.3l0.5-3.4c1.6-0.4,3.2-1,4.6-1.9    l2.7,2.1c0.3,0.2,0.6,0.3,0.9,0.3h0c0.4,0,0.8-0.2,1.1-0.4l2.4-2.4c0.5-0.5,0.6-1.3,0.1-1.9L39.6,29c0.9-1.4,1.5-2.9,1.9-4.5    L45,24c0.7-0.1,1.3-0.7,1.3-1.4v-3.5c0-0.7-0.5-1.3-1.3-1.4l-3.5-0.5c-0.4-1.6-1-3.1-1.9-4.5l2.9-3.8l-3.4-3.3    c-0.5-0.5-1.4-0.6-1.9-0.1l-2.8,2.1c-1.4-0.9-3-1.5-4.6-1.9l-0.5-3.4C29.3,1.5,28.7,1,27.9,1h-3.5c-0.7,0-1.3,0.5-1.4,1.3    l-0.5,3.4c-1.6,0.4-3.2,1-4.6,1.9l-2.8-2.1c-0.6-0.4-1.4-0.4-1.9,0.1L10.8,8c-0.5,0.5-0.6,1.3-0.1,1.9l2.1,2.7    c-0.9,1.4-1.5,2.9-1.9,4.5l-3.5,0.5c-0.7,0.1-1.3,0.7-1.3,1.4v3.5C6.2,23.3,6.7,23.9,7.4,24z M8.2,19.6l3.4-0.4    c0.6-0.1,1.1-0.5,1.2-1.1c0.4-1.6,1-3.2,1.9-4.5c0.3-0.5,0.3-1.2-0.1-1.7l-2.1-2.7l1.8-1.8l2.9,2.2l0.3,0.2l0.7,0l0.3-0.2    c1.5-1,3.1-1.7,4.8-2c0.6-0.1,1.1-0.6,1.1-1.2L24.9,3h2.5l0.4,3.3c0.1,0.6,0.5,1.1,1.1,1.2c1.6,0.3,3.2,1,4.6,1.9    c0.5,0.3,1.2,0.3,1.7-0.1l2.7-2l1.8,1.8l-2.1,2.7c-0.4,0.5-0.4,1.2-0.1,1.7c0.9,1.4,1.5,2.9,1.9,4.5c0.1,0.6,0.6,1.1,1.2,1.1    l3.4,0.4v2.5l-3.4,0.4c-0.6,0.1-1.1,0.5-1.2,1.1c-0.4,1.6-1,3.2-1.9,4.5c-0.3,0.5-0.3,1.2,0.1,1.7l2.1,2.7L38,34.3l-2.7-2    c-0.5-0.4-1.2-0.4-1.7-0.1c-1.4,0.9-3,1.5-4.6,1.9c-0.6,0.1-1.1,0.6-1.1,1.2l-0.4,3.3h-2.5l-0.4-3.3c-0.1-0.6-0.5-1.1-1.1-1.2    c-1.6-0.3-3.2-1-4.6-1.9c-0.5-0.3-1.2-0.3-1.7,0.1l-2.7,2l-1.8-1.8l2-2.6l0.7-1l-0.4-0.6c-1-1.4-1.7-3-2-4.8    c-0.1-0.6-0.6-1.1-1.2-1.1l-3.4-0.4V19.6z" style="fill: rgb(3, 169, 244); stroke-dasharray: 300.045, 300.045; stroke-dashoffset: 300.045;"></path></g><g><path class="st0" d="M26.2,30.3c5.2,0,9.5-4.2,9.5-9.4c0-5.2-4.3-9.4-9.5-9.4s-9.5,4.2-9.5,9.4C16.7,26,21,30.3,26.2,30.3z     M26.2,13.4c4.1,0,7.5,3.3,7.5,7.4s-3.4,7.4-7.5,7.4c-4.1,0-7.5-3.3-7.5-7.4S22.1,13.4,26.2,13.4z" style="fill: rgb(3, 169, 244); stroke-dasharray: 106.122, 106.122; stroke-dashoffset: 106.122;"></path></g></g></g>
+                                <text x="0" y="15" fill="#000" transform="translate(-45 93)" style="font-family:montserrat,sans-serif;font-weight:400;font-size:60px;">Cottingsley.tech</text>
+                            </svg>*@
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="you-button-menu">
+                    <a href="javascript:void(0)" class="you-color-small contact-us-btn bg-color hidden-xs hidden-sm" data-toggle="modal" id="btnContactUsmodal" data-target="#contact-us-modal">
+                        <span>Register</span><span class="you-color lazy-line bg-color">
+                         <svg id="registerIco" class="drawsvg-initialized drawsvg-initialized  painted drawsvg-initialized " viewBox="-1126 -592 100 1300" style="margin:0px;" width="32px" height="44px">
+                        <g transform="scale(0.5 0.5)" fill="#fff" stroke-width="4">
+                            <path d="M928 128h-288c0-70.692-57.306-128-128-128-70.692 0-128 57.308-128 128h-288c-17.672 0-32 14.328-32 32v832c0 17.674 14.328 32 32 32h832c17.674 0 32-14.326 32-32v-832c0-17.672-14.326-32-32-32zM512 64c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64s28.654-64 64-64zM896 960h-768v-768h128v96c0 17.672 14.328 32 32 32h448c17.674 0 32-14.328 32-32v-96h128v768z"></path>
+                            <path d="M448 858.51l-205.254-237.254 58.508-58.51 146.746 114.744 274.742-242.744 58.514 58.508z"></path>
+                            </g>
+                        </svg>
+                        </span>
+                    </a>
+                    <a class="you-color-small contact-us-btn bg-color visible-xs visible-sm" data-toggle="modal" data-target="#contact-us-modal">
+                    @*<img srcset='@Url.Content("~/Content/images/icon/callback.png")' alt="callback">*@
+                        <svg id="registerIcomobile" class="drawsvg-initialized drawsvg-initialized  painted drawsvg-initialized  drawsvg-initialized " viewBox="-26 -592 400 1300" style="margin:0px;" width="32px" height="44px">
+                            <g transform="scale(0.5 0.5)" fill="#fff" stroke-width="4">
+                                <path d="M928 128h-288c0-70.692-57.306-128-128-128-70.692 0-128 57.308-128 128h-288c-17.672 0-32 14.328-32 32v832c0 17.674 14.328 32 32 32h832c17.674 0 32-14.326 32-32v-832c0-17.672-14.326-32-32-32zM512 64c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64s28.654-64 64-64zM896 960h-768v-768h128v96c0 17.672 14.328 32 32 32h448c17.674 0 32-14.328 32-32v-96h128v768z" style="stroke-dasharray: 7378, 7378; stroke-dashoffset: 0;"></path>
+                                <path d="M448 858.51l-205.254-237.254 58.508-58.51 146.746 114.744 274.742-242.744 58.514 58.508z" style="stroke-dasharray: 1526.55, 1526.55; stroke-dashoffset: 0;"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
+            </nav>
+            @RenderBody()
+            <footer class="screen you-color bg-color">
+                <div class="container">
+
+                    <div class="social"><a class="twitter" href="#"></a><a class="facebook" href="#"></a><a class="instagram" href="#"></a></div>
+
+
+                    <div class="pages">
+                        <a href="index.html">Home</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="blog-single.html">Blog Single</a>
+                        <a href="about-us.html">About Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+
+
+                    <div class="copyright">
+                        <p>&copy; @DateTime.Now.Year - Cottingsley.tech</p>
+                    </div>
+
+                </div>
+
+                <div class="screen-blackout" hidden="" style="display: none;"></div>
+
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/935cb224/cloudflare-static/rocket.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/common.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/map.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/util.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/marker.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/onion.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/controls.js" data-rocketoptimized="true"></script>
+    <script type="text/javascript" charset="UTF-8" data-rocketsrc="https://maps.googleapis.com/maps-api-v3/api/js/32/4a/stats.js" data-rocketoptimized="true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvpH7_ggEW5MYLRO8EN1BbJak4u2uIvaA"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/cottingsleyscript")
+
+    @RenderSection("scripts", required: false)
+
+
+
+    <div class="loader" style="display: none;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve" class="drawsvg-initialized">
+            <rect x="0" y="0" width="4" height="10" fill="#333" transform="translate(0 15.5777)">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="10" y="0" width="4" height="10" fill="#333" transform="translate(0 11.0889)">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="20" y="0" width="4" height="10" fill="#333" transform="translate(0 2.2444)">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+        </svg>
+    </div>
+
+    <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" style="display: none;">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve" class="drawsvg-initialized">
+                <rect x="0" y="0" width="4" height="10" fill="#333" transform="translate(0 15.5777)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="10" y="0" width="4" height="10" fill="#333" transform="translate(0 11.0889)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="20" y="0" width="4" height="10" fill="#333" transform="translate(0 2.2444)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="collection-modal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="carousel slide col-lg-6 col-md-9 col-sm-9 col-xs-9" id="modal-carousel" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item">
+
+                        <div class="photo-collection"><img class="modal-first hidden-md hidden-sm hidden-xs" src="#" alt="modal first"><img class="md-modal-first hidden-lg hidden-xs hidden-sm" src="#" alt="small modal first"><img class="xs-modal-first hidden-lg hidden-md hidden-sm" src="#" alt="small modal first"></div>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <div class="photo-collection"><img class="modal-second hidden-md hidden-sm hidden-xs" src="#" alt="modal second"><img class="md-modal-second hidden-lg hidden-xs" src="#" alt="small modal second"><img class="xs-modal-second hidden-lg hidden-md hidden-sm" src="#" alt="small modal second"></div>
+
+                    </div>
+
+
+                    <div class="item active">
+
+                        <div class="photo-collection"><img class="modal-all hidden-md hidden-sm hidden-xs" src="../Content/images/collection-screen/modal-white-all.png" alt="modal all"><img class="modal-all hidden-lg hidden-xs" src="../Content/images/collection-screen/md-modal-white-all.png" alt="small modal all"><img class="modal-all hidden-lg hidden-md hidden-sm" src="../Content/images/collection-screen/xs-modal-white-all.png" alt="small modal all"></div>
+
+                    </div>
+
+                </div>
+
+                <ol class="carousel-indicators">
+                    <li class="case-indicator-1 you-color" data-target="#modal-carousel" data-slide-to="0"></li>
+                    <li class="case-indicator-2 you-color" data-target="#modal-carousel" data-slide-to="1"></li>
+                    <li class="case-indicator-3 you-color active" data-target="#modal-carousel" data-slide-to="2"></li>
+                </ol>
+            </div>
+
+
+            <div class="modal-content col-lg-6 col-md-10 col-sm-10 col-xs-10">
+
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h3 class="modal-title">VR GLASSES<br> LIMITED EDITION</h3>
+                    <div class="choose-this hidden-xs">
+                        <h4>3,587</h4>
+                        <p>people choose this</p>
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <p class="text short-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem<span class="hidden-text-tablet">quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span><span class="more-text you-color hidden-lg">more...</span></p>
+                    <p class="text">Stainless steel case</p>
+                    <p class="text you-color tag">#pop_whatch_shop</p>
+                    <div id="collection-modal-color"><a class="change-color" id="modal-collection-1"></a><a class="change-color active" id="modal-collection-2"></a><a class="change-color" id="modal-collection-3"></a><a class="change-color" id="modal-collection-4"></a></div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <h2 class="price you-color">$1,587</h2><a class="you-color-small">BUY GLASSES</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Thank You</h4>
+                    <p>for registering with us<br>we will get back to you as soon as possible.</p>
+                </div>
+                <div class="modal-body">
+                    In the meantime, We would like you to participate in our product research. It is only through your participation we can create a world class software and provide great value to you. So your opinion is very important to us.
+                    Click to button below to get to the Product Research page and provide your valuable insights.
+                </div>
+                <form>
+                    <div class="modal-footer">
+                        @Html.ActionLink("Participate in product research", "Index", "ProductResearch", null, new { @class = "btnmiddle btn you-color-big bg-color shadow-color" })
+                        @*<button class="btn you-color-big bg-color shadow-color">OK</button>*@
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
