@@ -91,12 +91,15 @@ div.form-input-wide {
     width: 540px !important;
     height: 351px !important;
 }
-#product-screen .item .image .point.point4{left: 406px;
+#product-screen .item .image .point.point4{
+    left: 406px;
     top: 323px;}
-.product #product-screen .item .image .point.point5{left: 134px;
+.product #product-screen .item .image .point.point5{
+    left: 134px;
     top: 335px;
 }
-.product #product-screen .item .image .point.point6{left: 446px;
+.product #product-screen .item .image .point.point6{
+    left: 446px;
     top: 207px;}
 
 .product #product-screen .item .image .point.pointnew1 {
