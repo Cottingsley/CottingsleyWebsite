@@ -8,45 +8,44 @@
     <h4 class="modal-title">Register with us </h4>
     <p>and get 1 year free usage<br> and nominal rates afterwards.</p>
 </div>
-            @using (Ajax.BeginForm("Registration", "School", new AjaxOptions { HttpMethod = "POST" },new { @id="registrationForm" }))
-            {
-                <div class="modal-body">
+            <form id="registrationForm" method="post">
+    <div class="modal-body">
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Your name", @required = "" })
-                        @*<input class="form-control" id="txtName" name="Name" type="text" placeholder="Your name" required="">*@
-                    </div>
+        <div class="form-group">
+            <input class="form-control" id="Name" name="Name" placeholder="Your name" required="" type="text" value="">
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.SchoolName, new { @class = "form-control", @placeholder = "School name", @required = "" })
-                        @*<input class="form-control" id="txtSchoolName" name="SchoolName" type="text" placeholder="School name" required="">*@
-                    </div>
+        </div>
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.Designation, new { @class = "form-control", @placeholder = "Designation", @required = "" })
-                        @*<input class="form-control" id="txtDesignation" name="Designation" type="text" placeholder="Your designation in the school" required="">*@
-                    </div>
+        <div class="form-group">
+            <input class="form-control" id="SchoolName" name="SchoolName" placeholder="School name" required="" type="text" value="">
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.SchoolLocation, new { @class = "form-control", @placeholder = "School location(State)", @required = "" })
-                        @*<input class="form-control" id="txtSchoolLocation" name="SchoolLocation" type="text" placeholder="School location(State)" required="">*@
-                    </div>
+        </div>
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.Telephone, new { @class = "form-control", @placeholder = "Your phone number", @required = "" })
-                        @*<input class="form-control phone-mask" id="txtTelephone" name="Telephone" type="text" placeholder="Your phone number" required="">*@
-                    </div>
+        <div class="form-group">
+            <input class="form-control" id="Designation" name="Designation" placeholder="Designation" required="" type="text" value="">
 
-                    <div class="form-group">
-                        @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", @placeholder = "Your email address", @required = "" })
-                        @*<input class="form-control" id="txtEmailAddress" name="EmailAddress" type="email" placeholder="Enter your e-mail" required="">*@
-                    </div>
+        </div>
 
-                </div>
-                <div class="modal-footer">
-                    <input class="btn you-color-big bg-color shadow-color" onclick="$('#contact-us-modal').modal('hide'); $('#subscribe-modal').modal('show');" type="submit" value="Go" data-toggle="modal" data-target="#subscribe-modal" />
-                </div>
-            }
+        <div class="form-group">
+            <input class="form-control" id="SchoolLocation" name="SchoolLocation" placeholder="School location(State)" required="" type="text" value="">
+
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" id="Telephone" name="Telephone" placeholder="Your phone number" required="" type="text" value="">
+
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" id="EmailAddress" name="EmailAddress" placeholder="Your email address" required="" type="text" value="">
+
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <input class="btn you-color-big bg-color shadow-color" type="button" value="Go" id="btnRegistrationForm" onclick="registrationSubmitClick()">
+    </div>
+</form>
         
 
 
