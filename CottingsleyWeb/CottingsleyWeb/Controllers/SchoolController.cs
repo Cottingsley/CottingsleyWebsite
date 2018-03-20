@@ -14,7 +14,7 @@ namespace CottingsleyWeb.Controllers
 
         public ActionResult ContactUs()
         {
-            return PartialView("~/Views/PartialViews/_ContactUs.cshtml", new UserRegistrationModel());
+            return PartialView("~/Views/PartialViews/_ContactUs.cshtml");
         }
 
         [HttpPost]
