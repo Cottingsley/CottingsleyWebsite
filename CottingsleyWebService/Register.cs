@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
+
 
 namespace CottingsleyWebService
 {
@@ -40,5 +42,52 @@ namespace CottingsleyWebService
                 };
             }
         }
+        public Response SchoolvisitorInformation(SchoolRegistration slkReg)
+        {
+
+          try
+          {
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(new Uri("http://localhost:64344/api/LandingPage/PostRegistrationQuestions"));
+
+            var postData = slkReg;
+            JavaScriptSerializer s = new JavaScriptSerializer();
+
+            var data = s.Serialize(postData);
+
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            request.ContentLength = data.Length;
+
+            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+            {
+
+                streamWriter.Write(data);
+                streamWriter.Flush();
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            return new Response
+            {
+                Message = "Posted data to Web API",
+                Data = responseString,
+                Status = true
+            };
+  
+            }
+          catch (Exception)
+          {
+              return new Response
+              {
+                  Message = "Cannot connect to Web API",
+                  Data = null,
+                  Status = false
+              };
+          }
+      }
+       
+    
     }
 }

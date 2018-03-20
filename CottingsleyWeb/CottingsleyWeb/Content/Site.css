@@ -69,6 +69,16 @@ div.form-input-wide {
     width:fit-content !important;
     left:41% !important;
 }
+.modal-body .btnmiddle
+{
+    margin-top:1%;
+}
+.modal-footer .btnmiddle{
+    height:fit-content !important;
+    top:90% !important;
+    left:52% !important;
+
+}
 
 #contact-us-modal .modal-dialog, #subscribe-modal .modal-dialog{
     box-shadow:none !important;

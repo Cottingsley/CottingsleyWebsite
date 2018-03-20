@@ -3,7 +3,7 @@
     Registration: '/School/Registration'
 };
 $(function () {
-    $("#btnContactUsmodal").click(function () {
+    $("#btnContactUsmodal,#btnDemo").click(function () {
         var $buttonClicked = $(this);
         var id = $buttonClicked.attr('data-target');
         var options = { "backdrop": "static", keyboard: true };

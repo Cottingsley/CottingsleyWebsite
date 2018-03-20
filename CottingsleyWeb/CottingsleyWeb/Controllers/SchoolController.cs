@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CottingsleyWebService.Model;
 
 namespace CottingsleyWeb.Controllers
 {
@@ -17,11 +18,9 @@ namespace CottingsleyWeb.Controllers
         }
 
         [HttpPost]
-        public ActionResult Registration(UserRegistrationModel values) {
-            var internalValue = values;
+        public ActionResult Registration(SchoolRegistration values) {
             Register register = new Register();
-           var a = register.GetAllQuestions();
-
+            var registerdvalue = register.SchoolvisitorInformation(values);
             return Json("Success");
         }
     }

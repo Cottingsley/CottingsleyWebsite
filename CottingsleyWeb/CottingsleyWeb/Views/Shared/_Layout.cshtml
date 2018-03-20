@@ -307,12 +307,21 @@
                     <p>for registering with us<br>we will get back to you as soon as possible.</p>
                 </div>
                 <div class="modal-body">
-                    In the meantime, We would like you to participate in our product research. It is only through your participation we can create a world class software and provide great value to you. So your opinion is very important to us.
-                    Click to button below to get to the Product Research page and provide your valuable insights.
+                    <form>
+                        <p>
+                            In the meantime, We would like you to participate in our product research. It is only through your participation we can create a world class software and provide great value to you. So your opinion is very important to us.
+                            Click to button below to get to the Product Research page and provide your valuable insights.
+                            @Html.ActionLink("Participate in product research", "Index", "ProductResearch", null, new { @class = "btnmiddle btn you-color-big bg-color shadow-color" })
+                        </p>
+                    </form>
                 </div>
                 <form>
                     <div class="modal-footer">
-                        @Html.ActionLink("Participate in product research", "Index", "ProductResearch", null, new { @class = "btnmiddle btn you-color-big bg-color shadow-color" })
+                        <p>
+                            If in-case you want to see the design of the application, you can go through the following link.
+                            <a class="btnmiddle btn you-color-big bg-color shadow-color" href="https://cottingsley.github.io">Demo</a>
+                        </p>
+                       
                         @*<button class="btn you-color-big bg-color shadow-color">OK</button>*@
                     </div>
 
