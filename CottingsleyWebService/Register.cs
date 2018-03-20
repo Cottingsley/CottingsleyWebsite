@@ -48,20 +48,16 @@ namespace CottingsleyWebService
           try
           {
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(new Uri("http://localhost:64344/api/LandingPage/PostRegistrationQuestions"));
-
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(new Uri("http://localhost:64344/api/LandingPage/PostSchoolRegistration"));
             var postData = slkReg;
             JavaScriptSerializer s = new JavaScriptSerializer();
-
             var data = s.Serialize(postData);
-
             request.Method = "POST";
             request.ContentType = "application/json";
             request.ContentLength = data.Length;
 
             using (var streamWriter = new StreamWriter(request.GetRequestStream()))
             {
-
                 streamWriter.Write(data);
                 streamWriter.Flush();
             }
