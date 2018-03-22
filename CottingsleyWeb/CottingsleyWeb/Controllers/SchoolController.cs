@@ -23,5 +23,21 @@ namespace CottingsleyWeb.Controllers
             var registerdvalue = register.SchoolvisitorInformation(values);
             return Json("Success");
         }
+
+        public ActionResult Product(int productId)
+        {
+            if (productId==1)
+            {
+                return View("~/Views/Products/Easechool.cshtml");
+            }
+            else if (productId ==2)
+            {
+                return View("~/Views/Products/Pipeline.cshtml");
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

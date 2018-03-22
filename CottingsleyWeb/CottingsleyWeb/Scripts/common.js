@@ -37,9 +37,9 @@ var registrationSubmitClick = function () {
         "SchoolLocation": $form.find("#SchoolLocation").val(),
         "Telephone": $form.find("#Telephone").val(),
         "EmailAddress": $form.find("#EmailAddress").val()
-    }
-    $.post(URLs.Registration,d,
-    function (data, status) {
+    };
+
+    $.post(URLs.Registration,d,function (data, status) {
         $registrationModal.modal("hide");
         $thankyouModal.css("display","block").modal("show");
     });
